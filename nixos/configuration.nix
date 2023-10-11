@@ -145,20 +145,21 @@
    meld         # Git diff & merge tool
    stow 		# For bringing in my dotfiles 
    btop			# System monitoring
+   tree         # Look at stuff
    home-manager
 
    # WM stuff
-   dunst 		# Notification daemon
-   libnotify		# dunst dependency
-   swww			# Wallpaper daemon
-   rofi-wayland 	# App launcher
+   dunst 		        # Notification daemon
+   libnotify		    # dunst dependency
+   swww			        # Wallpaper daemon
+   rofi-wayland 	    # App launcher
    networkmanagerapplet # Applet for NetworkManager
-   light		# Brightness control
-   swaylock-effects	# Screen locker
-   swayidle		# Idle and locking
-   wl-clipboard		# Clipboard manager
+   light		        # Brightness control
+   swaylock-effects	    # Screen locker
+   swayidle		        # Idle and locking
+   wl-clipboard		    # Clipboard manager
   # font-awesome		# Fonts required for waybar
-   nerdfonts		# Fonts with icons
+   nerdfonts		    # Fonts with icons
 
    (pkgs.waybar.overrideAttrs (oldAttrs: { # bar
        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
